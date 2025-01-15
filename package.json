@@ -12,6 +12,7 @@
     "build:js": "TARGET=build_js NODE_ENV=production webpack -p --progress",
     "build:css": "TARGET=build_css NODE_ENV=production webpack -p --progress && rm ./main.js",
     "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "analyze": "TARGET=analyze NODE_ENV=production webpack -p --progress"
   },
   "repository": {
