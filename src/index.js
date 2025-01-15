@@ -580,7 +580,6 @@ class PhoneInput extends React.Component {
     const diff = formattedNumber.length - oldFormattedText.length;
 
     this.setState({
-      formattedNumber,
       freezeSelection,
       selectedCountry: newSelectedCountry,
     }, () => {
